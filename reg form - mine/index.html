@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'/>
+        <meta name='viewport'
+              content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+        <title>Fractal Survey Form</title>
+        <link rel='stylesheet' href='styles.css'/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Delius&family=Henny+Penny&display=swap" rel="stylesheet">
+</head>
+
+    <body>
+      <div class='page'>
+        <header>
+            <h1 id='title'>Fractal Survey Form</h1>
+            <p id='description'>An interesting jorney has just begun!</p>
+        </header>
+
+        <form id='survey-form' method='post' action="https://register-demo.freecodecamp.org">
+
+            <fieldset>
+                <label for='name' id='name-label'>Enter your full name:</label>
+                <input id='name' name='name' type='text' required placeholder='Fractal Lover'/>
+
+                <label for='email' id='email-label'>Enter your email:</label>
+                <input type='email' id='email' name='email' required placeholder='fractal@gmail.com'/>
+                <br/><br/>
+                <label for='number' id='number-label'>Enter your age of discovery of the fractals:</label>
+                <p class='small'>(Optional)</p>
+                <input type='number' id='number' min='0' max='150' placeholder='5'/>
+            </fieldset>
+
+            <fieldset>
+                <p>What type of fractals do you prefer?</p>
+                <input id='deterministic' type='radio' name='preferred' value='deterministic' class='inline'/>
+                <label for='deterministic' class='inline-lb'>Deterministic</label>
+
+                <input id='random' type='radio' name='preferred' value='random' class='inline'/>
+                <label for='random' class='inline-lb'>Random</label>
+
+                <input id='natural' type='radio' name='preferred' value='natural' class='inline'/>
+                <label for='natural' class='inline-lb'>Natural</label>
+
+                <br/><br/>
+                <label for='dropdown'>What is your favourite fractal?</label>
+                <select id='dropdown' name='dropdown'>
+                    <option value=''>(select one)</option>
+                    <option value='mandelbrot'>Mandelbrot Set</option>
+                    <option value='mandelbulb'>Mandelbulb</option>
+                    <option value='dragon'>Dragon curve</option>
+                    <option value='julia'>Julia Set</option>
+                    <option value='l-system'>L-system</option>
+                    <option value='pythagoras'>Pythagoras tree</option>
+                    <option value='sierpinski'>Sierpinski</option>
+                    <option value='koch'>Koch curve</option>
+                    <option value='cantor'>Cantor dust</option>
+                    <option value='peano'>Peano curve</option>
+                    <option value='hilbert'>Hilbert curve</option>
+                    <option value='other'>Other</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <p>What kind of fractals do you find the most intriguing?</p>
+                <p class='small'>(Check all that apply)</p>
+
+                <input id='earth' name='earth' type='checkbox' value='earth' class='inline'/>
+                <label for='earth' class='inline-lb'>On Earth</label>
+
+                <input id='bio' name='bio' type='checkbox' value='bio' class='inline'/>
+                <label for='bio' class='inline-lb'>Biological</label>
+
+                <input id='space' name='space' type='checkbox' value='space' class='inline'/>
+                <label for='space' class='inline-lb'>In space</label>
+
+                <input id='time' name='time' type='checkbox' value='time' class='inline'/>
+                <label for='time' class='inline-lb'>In time</label>
+
+                <input id='sound' name='sound' type='checkbox' value='sound' class='inline'/>
+                <label for='sound' class='inline-lb'>In sound</label>
+
+                <input id='ai' name='ai' type='checkbox' value='ai' class='inline'/>
+                <label for='ai' class='inline-lb'>AI generated</label>
+
+                <input id='law' name='law' type='checkbox' value='law' class='inline'/>
+                <label for='law' class='inline-lb'>In law and economy</label>
+
+                <input id='md' name='md' type='checkbox' value='md' class='inline'/>
+                <label for='md' class='inline-lb'>Multidimensional</label>
+
+                <input id='math' name='math' type='checkbox' value='math' class='inline'/>
+                <label for='math' class='inline-lb'>Pure mathematical</label>
+
+                <input id='other' name='other' type='checkbox' value='other' class='inline'/>
+                <label for='other' class='inline-lb'>Other</label>
+
+            </fieldset>
+            <fieldset>
+                <label for='story'>Share your story of fractal exploration:</label>
+                <textarea id='story' name='story' placeholder='I love fractals!'></textarea>
+                <label for='photo'>You can upload the last of your fractal creation here:</label>
+                <input id='photo' name='photo' type='file'/>
+            </fieldset>
+            <input id='submit' type='submit' value='Submit' />
+        </form>
+        <footer>
+            <p>Made by Lians ©</p>
+        </footer>
+      </div>
+    </body>
+</html>

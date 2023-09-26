@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Delius', cursive;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.4;
+  background-image: linear-gradient(
+      100deg,
+      rgba(0, 150, 200, 0.3),
+      rgba(120, 0, 110, 0.4)
+    ),
+    url(mandel.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page {
+  margin: 3.125rem auto 0 auto;
+  width: 720px;
+}
+
+h1  {
+  font-size: 2.125rem;
+  font-family: 'Henny Penny', cursive;
+  color: coral;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  margin: 1em auto;
+  text-align: center;
+}
+
+#description {
+  font-family: 'Henny Penny', cursive;
+  font-size: 1.125rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  color: sandybrown;
+  margin: 1em auto;
+  text-align: center;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+.small {
+  font-size: 0.95rem;
+}
+
+label {
+  display: flex;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+header {
+  padding: 0 0.7rem;
+  margin-bottom: 1.75rem;
+}
+
+form {
+  color: #ffffff;
+  background-color: rgba(0, 0, 20, 0.55);
+  border-radius: 0.3rem;
+  width: 95vw;
+  max-width: 720px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+fieldset {
+  border: none;
+  border-bottom-style: double;
+  padding: 20px 0;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+input, textarea, select {
+  font-size: 1rem;
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  background-color: rgba(5, 0, 20, 0.96);
+  border: 1px solid rgba(5, 0, 20, 0.96);
+  border-radius: 4px;
+  color: coral;
+}
+
+#submit {
+  font-family: 'Henny Penny', cursive;
+  font-size: 1.5rem;
+  color: coral;
+  display: block;
+  width: 60%;
+  padding: 0.5rem;
+  margin: 1em auto;
+  background: var(--color-green);
+  color: coral;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inline-lb {
+  display: inline-block;
+  width: 95%;
+  margin: 0.5rem 0;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type='file'] {
+  padding: 1px 2px;
+}
+
+textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+  font-size: 1.125rem;
+}
+
+footer {
+  text-align: right;
+}
+footer p {
+  font-size: 0.95rem;
+  padding: 10px;
+}
